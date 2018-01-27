@@ -1,22 +1,27 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 </head>
-	<img src="HTB1jXHuGVXXXXb9apXXq6xXFXXXM.jpg" id="bg">
 
 <body> 
     
   
     
-	<div id ="pname">
-	<?php echo($_POST['name']); ?>
- <div id="con">
- 	<ul>
- 	</ul>
- </div>
+<div id ="pname">
+    <?php if(isset($_POST['name'])&&!empty($_POST['name'])){
+            echo $_POST['name'];
+    }else{
+        header("Location: index.php");
+    }
+    ?>
+    <div id="con">
+        <ul>
+        </ul>
     </div>
+</div>
 <script>
 	getdata("<?php echo($_POST['name']); ?>");
 function getdata(str) {
@@ -59,6 +64,6 @@ function putdata() {
 }
 	
 </script>
-    <a href="index.php">  <img src="backbutton.png" width="5%" height="5%" > </a>
+    <a href="index.php"> <img src="backbutton.png" width="5%" height="5%" > </a>
 </body>
 </html>
