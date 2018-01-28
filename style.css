@@ -7,6 +7,7 @@ body {
     background-color: #EE4920;
     font-family: 'Varela Round', sans-serif;
     margin: 0;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -23,7 +24,7 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-160%);
+    transform: translateX(-25%) translateY(-160%);
     color: white;
     padding: 0;
     width: 700px;
@@ -37,10 +38,10 @@ a {
     width: 700px;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-200%);
+    transform: translateX(-25%) translateY(-180%);
     text-align: center;
     color: white;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 /*link text box*/
@@ -53,7 +54,7 @@ a {
 	position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(0%);
+    transform: translateX(-19%) translateY(0%);
 	margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -67,8 +68,8 @@ a {
     left: 12px;
     width: 70%;
     margin: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 0;
     margin-right: 0;
@@ -78,7 +79,11 @@ a {
     outline: none;
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
+    border: 1px solid white; /*important*/
+}
 
+.ui_field:focus{
+    border: 1px solid #454A4E;
 }
 
 .ui_button{
@@ -100,19 +105,17 @@ a {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
 }
 #pname{
     width: 336px;
     height: 60px;
-    margin-top: 60px;
-    margin-left: 36%;
     text-align: center;
     font-size: 46px;
     font-weight: normal;
     background: transparent;
     border-radius: 5px;
-    color: white;
-    border: 2px solid white;
+    color: black;
     text-decoration: none;
 }
 
@@ -136,7 +139,7 @@ button{
 	margin-left: 10px;
 	margin-top: 0px;
 	outline: hidden;
-padding: 10px 10px 10px 10px;
+padding: 10px;
 border: solid black 2px;
  text-decoration: none;
 font-weight:normal;
@@ -214,20 +217,34 @@ ul li a:hover{
 }
 
 #addnewfield{
- width: 220px;
-height: 50px;
-padding: 6px 0px 0px 0px;;
+/*    border: 2px solid black;*/
+    width: 250px;
+    height: 58px;
+    padding: 0;
 	margin-left: 6px;
 	margin-top: 20px;
+    position: inherit;
 }
 #addnewbutton{
-	font-family:Helvetica Neue, Helvetica, sans-serif;
-	color: black;
-	background-color: white;
+	color: white;
 	font-size: 20px;
 	outline:thick; 
 	width: 60px;
 	height: 60px;
-	padding: 0px;
+	padding: 0;
+    position:inherit;
+}
 
+/*playlist*/
+
+#playlist{
+    float: left;
+    width: 25%;
+    height: 650px;
+    background-color: white;
+    color: #454A4E;
+}
+
+#playlist p{
+    text-align: center;
 }
