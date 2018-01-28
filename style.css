@@ -120,62 +120,49 @@ a {
 }
 
 #con{
-	  font-size : 23px;
+    font-size : 23px;
     background: transparent;
-	position: absolute;
-	top: auto;
+    position: absolute;
+    top: auto;
     margin-top: 12px;
-     width: inherit;
-	height: 100%;
-	font-family:impact, sans-serif;
-	overflow: auto;
-	overflow-x: hidden;
- transition:left 0.3s linear;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    transition:left 0.3s linear;
 
 }
 button{
-	background-color: white;
+    background-color: white;
      width: 280px;
-	margin-left: 10px;
-	margin-top: 0px;
-	outline: hidden;
-padding: 10px;
-border: solid black 2px;
- text-decoration: none;
-font-weight:normal;
-letter-spacing:0pt;
-
-word-spacing:1pt;
-font-size:16px;
-text-align:left;
-font-family:impact, sans-serif;
+    margin-left: 10px;
+    margin-top: 0px;
+    outline: hidden;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    font-weight:normal;
+    letter-spacing:0pt;
+    word-spacing:1pt;
+    font-size:16px;
+    text-align:left;
+    font-family:impact, sans-serif;
 }
+
 .find_button{
-		background-image: url(button_epng);
-     width: 280px;
-	margin-left: 10px;
-	margin-top: 5px;
-	outline: hidden;
-padding: 10px 10px 10px 10px;
-border: solid #FFFFFF 2px;
- text-decoration: none;
-font-weight:normal;
-letter-spacing:0pt;
-word-spacing:1pt;
-font-size:16px;
-text-align:left;
-font-family:impact, sans-serif;
-
-}
-
-#sidebar{
-	background:#151718;
-	width:200px;
-	height:100%;
-	display:block;
-	position:absolute;
-	left:-200px;
-	top:0px;
+    background-image: url(button_epng);
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 5px;
+    outline: hidden;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    font-weight:normal;
+    letter-spacing:0pt;
+    word-spacing:1pt;
+    font-size:16px;
+    text-align:left;
 }
 
 #sidebar.visible{
@@ -209,7 +196,7 @@ ul li a:hover{
 	color:black;
 	border-bottom:1px solid #111;
 	display:block;
-	width:290px;
+	
 	height: 30px;
 	text-align: left;
 	padding:10px;
@@ -218,7 +205,6 @@ ul li a:hover{
 
 #addnewfield{
 /*    border: 2px solid black;*/
-    width: 250px;
     height: 58px;
     padding: 0;
 	margin-left: 6px;
