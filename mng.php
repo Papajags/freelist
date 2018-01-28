@@ -14,7 +14,7 @@
     <?php if(isset($_POST['name'])&&!empty($_POST['name'])){
             echo $_POST['name'];
     }else{
-        header("Location: index.php");
+        //header("Location: index.php");
     }
     ?>
     <div id="con">
